@@ -10,7 +10,7 @@ class DdeExecute():
         self.conversation = None
         self.app = "xmplay"
         self.topic = "system"
-        self.is_connected = True
+        self.is_connected = False
         self._setup_dde()     
     
     def _setup_dde(self):
@@ -19,10 +19,11 @@ class DdeExecute():
         try:
             self.conversation = dde.CreateConversation(self.serv)
             self.conversation.ConnectTo(self.app,self.topic)
+            self.is_connected = True
         except:
             self.is_connected = False
             print("Cannot connect to XMPlay")
-        
+
     def exec_command(self,command):
         try:
             self.conversation.Exec(command)

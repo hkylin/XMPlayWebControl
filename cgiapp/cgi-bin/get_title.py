@@ -18,7 +18,7 @@ class Titles():
         self._load_titles()
         title = "0XMPlay window not found"
         for item in self.windows:
-            if (item.startswith("XMPlay")):
+            if (item.startswith("XMPlay - ")):
                 title = "1" + (item[9:])
 
         if not title[1:]:
