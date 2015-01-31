@@ -84,7 +84,7 @@ $(document).ready(function(){
         changeSong($(this));
     });
 
-    $('#volume_buttons').delegate('button', 'click', function() {
+    $('#settings_buttons').delegate('button', 'click', function() {
         changeVolume($(this));
     });
 });

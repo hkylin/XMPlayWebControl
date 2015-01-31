@@ -1,8 +1,8 @@
 import cgi
 import win32ui, dde
 
-ACTIONS = {"play_pause":"key80", "stop":"key81", "next":"key128",
-"prev":"key129","vol_up":"key512", "vol_down":"key513", "vol_on_off":"key523"}
+ACTIONS = {"play_pause":"key80", "stop":"key81", "next":"key128", "random":"key313",
+"prev":"key129","vol_up":"key512", "vol_down":"key513", "vol_on_off":"key523",}
 
 class DdeExecute():
     
